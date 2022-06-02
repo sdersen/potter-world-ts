@@ -1,0 +1,56 @@
+@import "../variables.scss";
+@keyframes bounce {
+    from {
+      transform: translateY(0px);
+    }
+    to {
+      transform: translateY(-20px);
+    }
+  }
+
+h1{
+    color: $dark-blue;
+}
+
+.home{
+    max-width: 1400px;
+
+    .characters-btn{
+        height: 50px;
+        width: 250px;
+        font-size: 1.25rem;
+        font-weight: bold;
+        border: none;
+        border-radius: 20px;
+        background-color: $dark-blue;
+        color: $pink;
+        margin: 30px;
+    }
+}
+.book-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.button-arrow-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.arrow{
+    transform: translateY();
+    animation: bounce 0.5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    fill: $dark-blue;
+}
+
+.character-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.hidden{
+    display: none;
+}

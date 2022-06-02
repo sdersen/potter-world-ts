@@ -1,0 +1,16 @@
+@import "../variables.scss";
+
+.book {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h2{
+      color: $dark-blue;
+      font-size: 2rem;
+  }
+  p {
+    width: 70%;
+  }
+}

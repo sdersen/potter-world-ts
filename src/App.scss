@@ -1,0 +1,19 @@
+@import "./variables.scss";
+
+.App {
+  text-align: center;
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1400px;
+  
+  @media screen and (min-width: 768px){
+    margin: 30px;
+  }
+}
+
+.App-link {
+  color: #61dafb;
+}
